@@ -5329,7 +5329,7 @@ html.ek-quiz-open {
   background: #FEFEFE;
   box-shadow: 0 2px 4px 2px rgba(10,13,18,0.10);
   border: 1px solid #EFEFEF;
-  border-radius: 12px;
+  border-radius: 8.81px;
   display: flex;
   flex-direction: column;
   align-items: center;
