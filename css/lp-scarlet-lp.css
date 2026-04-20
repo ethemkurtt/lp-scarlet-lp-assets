@@ -5072,6 +5072,10 @@ html.ek-quiz-open {
 .sx-mfeatures { display: none; }
 
 @media (max-width: 1024px) {
+  .elementor img { height: unset !important; }
+}
+
+@media (max-width: 1024px) {
   .sx-hero__features { display: none !important; }
 
   .sx-mfeatures {
