@@ -5785,15 +5785,19 @@ html.ek-quiz-open {
   .sx-header__cta { padding: 10px 16px; font-size: 14px; height: auto; }
 
   /* ---------- HERO (mobil) ---------- */
-  .sx-hero {
+  .sx .sx-hero {
     height: auto;
     min-height: 0;
     padding: 0;
-    background: #003366 url('https://lp.elitklinik.com.tr/wp-content/uploads/2026/04/kapak2.png') no-repeat top center / cover;
+    background-color: #003366 !important;
+    background-image: url('https://lp.elitklinik.com.tr/wp-content/uploads/2026/04/kapak2.png') !important;
+    background-repeat: no-repeat !important;
+    background-position: top center !important;
+    background-size: cover !important;
     position: relative;
     overflow: visible;
   }
-  .sx-hero__bg { display: none; }
+  .sx .sx-hero__bg { display: none !important; }
   .sx-hero__content {
     position: relative;
     z-index: 2;
