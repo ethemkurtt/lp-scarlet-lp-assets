@@ -5852,6 +5852,18 @@ html.ek-quiz-open {
     position: relative;
     overflow: visible;
   }
+  /* Bottom fade-to-white overlay */
+  .sx .sx-hero::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 120px;
+    background: linear-gradient(180deg, rgba(254, 254, 254, 0) 0%, rgba(254, 254, 254, 0.996078) 100%);
+    pointer-events: none;
+    z-index: 1;
+  }
   /* Mobile: show the bg img as actual background-image (JS swaps src to kapak2.png) */
   .sx .sx-hero__bg {
     display: block !important;
