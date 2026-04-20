@@ -5338,7 +5338,7 @@ html.ek-quiz-open {
 .sx-problem-card__img {
   width: 100%;
   height: 158.17px;
-  border-radius: 8.81px;
+  border-radius: 8.81px !important;
   object-fit: cover;
 }
 .sx-problem-card__label {
@@ -6088,9 +6088,26 @@ html.ek-quiz-open {
   /* Flatten content so we can reorder with title/subtitle/list first, video middle, CTA last */
   .sx-product__content { display: contents; }
 
-  .sx-product__title { order: 0; font-size: 24px !important; line-height: 32px !important; }
-  .sx-product__subtitle { order: 1; }
-  .sx-product__list { order: 2; }
+  .sx-product__title {
+    order: 0;
+    width: 382px;
+    max-width: 100%;
+    font-size: 24px !important;
+    line-height: 32px !important;
+    text-align: right !important;
+  }
+  .sx-product__subtitle {
+    order: 1;
+    width: 382px;
+    max-width: 100%;
+    text-align: right !important;
+  }
+  .sx-product__list {
+    order: 2;
+    width: 382px;
+    max-width: 100%;
+    text-align: right !important;
+  }
   .sx-product__video {
     order: 3;
     width: 100%;
