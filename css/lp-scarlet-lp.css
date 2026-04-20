@@ -4998,6 +4998,7 @@ html.ek-quiz-open {
   height: 720px;
   position: relative;
   overflow: hidden;
+  background: #003366;
 }
 .sx-hero__bg {
   position: absolute;
@@ -5763,8 +5764,23 @@ html.ek-quiz-open {
 
 /* ---------- Responsive (Mobile < 1024px) ---------- */
 @media (max-width: 1024px) {
-  .sx-hero { height: auto; min-height: 100vh; padding-bottom: 40px; }
-  .sx-hero__content { position: static; width: 100%; padding: 140px 20px 20px; }
+  .sx-header {
+    padding: 16px 20px;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(0, 51, 102, 0.85);
+  }
+  .sx-header__inner { gap: 12px; }
+  .sx-header__logo-img { width: 140px; height: auto; }
+  .sx-header__cta { padding: 10px 16px; font-size: 14px; height: auto; }
+  .sx-hero {
+    height: auto;
+    min-height: 0;
+    padding: 120px 20px 40px;
+    background: #003366;
+  }
+  .sx-hero__bg { position: absolute; inset: 0; opacity: 0.4; }
+  .sx-hero__content { position: relative; width: 100%; padding: 0; top: auto; left: auto; }
   .sx-hero__title { font-size: 32px; line-height: 40px; }
   .sx-hero__features { width: 100%; }
   .sx-hero__logos { width: 100%; flex-wrap: wrap; gap: 16px; justify-content: center; }
