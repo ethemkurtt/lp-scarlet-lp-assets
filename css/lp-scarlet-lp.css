@@ -5010,7 +5010,7 @@ html.ek-quiz-open {
 .sx-hero__content {
   position: absolute;
   left: 35px;
-  top: 120px;
+  top: 150px;
   width: 828px;
   display: flex;
   flex-direction: column;
@@ -5019,7 +5019,7 @@ html.ek-quiz-open {
 .sx-hero__inner {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 35px;
 }
 .sx-hero__badge {
   display: inline-flex;
