@@ -5842,15 +5842,21 @@ html.ek-quiz-open {
     height: auto;
     min-height: 0;
     padding: 0;
-    background-color: #003366 !important;
-    background-image: url('https://lp.elitklinik.com.tr/wp-content/uploads/2026/04/kapak2.png') !important;
-    background-repeat: no-repeat !important;
-    background-position: top center !important;
-    background-size: cover !important;
+    background: #003366;
     position: relative;
     overflow: visible;
   }
-  .sx .sx-hero__bg { display: none !important; }
+  /* Mobile: show the bg img as actual background-image (JS swaps src to kapak2.png) */
+  .sx .sx-hero__bg {
+    display: block !important;
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: top center !important;
+    z-index: 0 !important;
+  }
   .sx-hero__content {
     position: relative;
     z-index: 2;

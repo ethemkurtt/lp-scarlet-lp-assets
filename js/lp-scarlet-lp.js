@@ -13,6 +13,23 @@
 document.addEventListener('DOMContentLoaded', function () {
 
   /* =============================================================
+     SCARLET — swap hero bg image on mobile
+     ============================================================= */
+  (function swapScarletHeroBg() {
+    var DESKTOP_BG = 'https://lp.elitklinik.com.tr/wp-content/uploads/2026/04/scarletx-kapak.webp';
+    var MOBILE_BG  = 'https://lp.elitklinik.com.tr/wp-content/uploads/2026/04/kapak2.png';
+    var bg = document.querySelector('.sx-hero__bg');
+    if (!bg) return;
+    function apply() {
+      var isMobile = window.matchMedia('(max-width: 1024px)').matches;
+      var target = isMobile ? MOBILE_BG : DESKTOP_BG;
+      if (bg.getAttribute('src') !== target) bg.setAttribute('src', target);
+    }
+    apply();
+    window.addEventListener('resize', apply);
+  })();
+
+  /* =============================================================
      GLOBAL REDIRECTS — always active, regardless of modals on page
      ============================================================= */
   document.querySelectorAll('[data-open-quiz], [data-open-contact]').forEach(function (trigger) {
