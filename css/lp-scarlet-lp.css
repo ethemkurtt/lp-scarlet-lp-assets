@@ -5057,6 +5057,16 @@ html.ek-quiz-open {
 }
 .sx-hero__title--dark { color: #003366; }
 .sx-hero__title--light { color: #FEFEFE; }
+
+.sx-hero__subtitle {
+  color: #FEFEFE;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  opacity: 0.9;
+  margin: 0;
+  max-width: 707px;
+}
 .sx-hero__features {
   width: 707px;
   display: flex;
