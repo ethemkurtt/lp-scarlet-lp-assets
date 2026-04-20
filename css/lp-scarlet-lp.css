@@ -5073,6 +5073,8 @@ html.ek-quiz-open {
 
 @media (max-width: 1024px) {
   .elementor img { height: unset !important; }
+  .sx-hero__subtitle { display: none !important; }
+  .sx-hero__title { font-size: 24px !important; line-height: 38px !important; }
 }
 
 @media (max-width: 1024px) {
