@@ -5010,16 +5010,16 @@ html.ek-quiz-open {
 .sx-hero__content {
   position: absolute;
   left: 35px;
-  top: 182.5px;
+  top: 120px;
   width: 828px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
 }
 .sx-hero__inner {
   display: flex;
   flex-direction: column;
-  gap: 46px;
+  gap: 24px;
 }
 .sx-hero__badge {
   display: inline-flex;
@@ -5050,9 +5050,9 @@ html.ek-quiz-open {
   gap: 4px;
 }
 .sx-hero__title {
-  font-size: 52px;
+  font-size: 44px;
   font-weight: 700;
-  line-height: 60px;
+  line-height: 52px;
   margin: 0;
 }
 .sx-hero__title--dark { color: #003366; }
@@ -5060,9 +5060,9 @@ html.ek-quiz-open {
 
 .sx-hero__subtitle {
   color: #FEFEFE;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 24px;
   opacity: 0.9;
   margin: 0;
   max-width: 707px;
@@ -5071,22 +5071,22 @@ html.ek-quiz-open {
   width: 707px;
   display: flex;
   gap: 16px;
-  align-items: flex-end;
+  align-items: stretch;
 }
 .sx-hero__feature {
   flex: 1;
-  min-height: 127px;
-  padding: 24px;
+  min-height: 100px;
+  padding: 16px;
   background: rgba(254, 254, 254, 0.10);
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   color: #FEFEFE;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 20px;
   text-align: center;
 }
 .sx-hero__feature-icon {
