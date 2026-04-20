@@ -6079,10 +6079,30 @@ html.ek-quiz-open {
     text-align: center;
     color: #003366;
   }
-  .sx-product { flex-direction: column; padding: 0 20px 48px; gap: 32px; }
-  .sx-product__video { width: 100%; max-width: 421px; }
-  .sx-product__content { padding: 0; }
-  .sx-product__title { font-size: 28px; line-height: 38px; }
+  .sx-product {
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 20px;
+    gap: 24px;
+  }
+  /* Flatten content so we can reorder with title/subtitle/list first, video middle, CTA last */
+  .sx-product__content { display: contents; }
+
+  .sx-product__title { order: 0; font-size: 24px !important; line-height: 32px !important; }
+  .sx-product__subtitle { order: 1; }
+  .sx-product__list { order: 2; }
+  .sx-product__video {
+    order: 3;
+    width: 100%;
+    max-width: 382px;
+    height: auto;
+    aspect-ratio: 382 / 432;
+    background-image: url('https://lp.elitklinik.com.tr/wp-content/uploads/2026/04/scarletx-kapak-video-mobil.webp') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+  .sx-product .sx-cta--hero { order: 4; width: 100%; max-width: 382px; }
   .sx-benefits { padding: 48px 20px; gap: 32px; }
   .sx-benefits__grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
   .sx-benefits__title { font-size: 28px; }
