@@ -5814,9 +5814,24 @@ html.ek-quiz-open {
     font-size: 32px;
     line-height: 40px;
     text-align: center;
+    position: relative;
   }
   .sx-hero__title--dark,
-  .sx-hero__title--light { color: #003366; }
+  .sx-hero__title--light { color: #FEF3EA; }
+
+  /* Subtitle injected via CSS (no HTML change needed) */
+  .sx-hero__title::after {
+    content: "Scarlet X altın iğne ile daha pürüzsüz ve genç bir cilt.";
+    display: block;
+    margin-top: 12px;
+    color: #FEFEFE;
+    font-family: 'Sofia Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.9;
+    text-align: center;
+  }
 
   .sx-cta--hero {
     order: 2;
@@ -5856,9 +5871,8 @@ html.ek-quiz-open {
   }
   .sx-hero__feature {
     box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 24px 1fr 24px;
     align-items: center;
     gap: 20px;
     width: 100%;
@@ -5873,7 +5887,14 @@ html.ek-quiz-open {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    text-align: left;
+    text-align: center;
+  }
+  /* Phantom right-side spacer so text centers between icon and right edge */
+  .sx-hero__feature::after {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
   }
   .sx-hero__feature-icon {
     width: 24px;
