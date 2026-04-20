@@ -5779,8 +5779,12 @@ html.ek-quiz-open {
     padding: 120px 20px 40px;
     background: #003366;
   }
-  .sx-hero__bg { position: absolute; inset: 0; opacity: 0.4; }
-  .sx-hero__content { position: relative; width: 100%; padding: 0; top: auto; left: auto; }
+  .sx-hero__bg { position: absolute; inset: 0; opacity: 0.35; }
+  .sx-hero__content { position: relative; width: 100%; padding: 0; top: auto; left: auto; z-index: 2; }
+  .sx-hero__title--dark { color: #FEFEFE; }
+  .sx-hero__features { flex-direction: column; width: 100%; gap: 12px; }
+  .sx-hero__feature { width: 100%; min-height: 0; padding: 16px 20px; flex-direction: row; text-align: left; justify-content: flex-start; }
+  .sx-hero__feature-icon { flex-shrink: 0; }
   .sx-hero__title { font-size: 32px; line-height: 40px; }
   .sx-hero__features { width: 100%; }
   .sx-hero__logos { width: 100%; flex-wrap: wrap; gap: 16px; justify-content: center; }
