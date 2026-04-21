@@ -6348,7 +6348,8 @@ html.ek-quiz-open {
   }
   /* Flatten so we can reorder: logo, mission, contact title, desc, items, social, map */
   .sx-footer__row,
-  .sx-footer__left { display: contents; }
+  .sx-footer__left,
+  .sx-footer__bottom { display: contents !important; }
 
   .sx-footer__brand { order: 0; display: flex; flex-direction: column; gap: 16px; }
   .sx-footer__logo { order: 0; }
@@ -6359,19 +6360,21 @@ html.ek-quiz-open {
   .sx-footer__contact-row {
     flex-direction: column !important;
     gap: 0 !important;
-    align-items: center !important;
+    align-items: stretch !important;
     width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
   }
   .sx-footer__contact-item {
     padding: 12px 0 !important;
-    width: auto !important;
+    width: 100% !important;
     justify-content: flex-start !important;
+    gap: 12px !important;
   }
   .sx-footer__contact-item--divider {
     border-right: none !important;
     border-bottom: 1px solid #F98755 !important;
     padding-bottom: 12px !important;
-    min-width: 260px;
   }
 
   /* Social moved between contact and map — CENTERED */
