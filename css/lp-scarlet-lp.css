@@ -6355,17 +6355,32 @@ html.ek-quiz-open {
   .sx-footer__mission { width: 100% !important; max-width: 100% !important; }
   .sx-footer__left > div:not(.sx-footer__brand) { order: 1; display: flex; flex-direction: column; gap: 12px; }
 
-  /* Contact items stacked vertically on mobile */
-  .sx-footer__contact-row { flex-direction: column !important; gap: 8px !important; }
-  .sx-footer__contact-item { padding: 8px 0 !important; }
-  .sx-footer__contact-item--divider { border-right: none !important; }
+  /* Contact items stacked vertically on mobile, centered */
+  .sx-footer__contact-row {
+    flex-direction: column !important;
+    gap: 0 !important;
+    align-items: center !important;
+    width: 100%;
+  }
+  .sx-footer__contact-item {
+    padding: 12px 0 !important;
+    width: auto !important;
+    justify-content: flex-start !important;
+  }
+  .sx-footer__contact-item--divider {
+    border-right: none !important;
+    border-bottom: 1px solid #F98755 !important;
+    padding-bottom: 12px !important;
+    min-width: 260px;
+  }
 
-  /* Social moved between contact and map */
+  /* Social moved between contact and map — CENTERED */
   .sx-footer__social {
     order: 2;
-    justify-content: flex-start;
-    gap: 16px;
-    padding: 8px 0;
+    justify-content: center !important;
+    gap: 20px;
+    padding: 12px 0;
+    width: 100%;
   }
 
   /* Map image */
