@@ -5083,9 +5083,9 @@ html.ek-quiz-open {
   .sx-mfeatures {
     display: flex;
     flex-direction: column;
-    gap: var(--sx-8);
+    gap: 8px;
     width: 100%;
-    padding: var(--sx-24);
+    padding: 24px;
     background: #FEFEFE;
     box-sizing: border-box;
   }
@@ -5094,10 +5094,10 @@ html.ek-quiz-open {
     display: grid;
     grid-template-columns: 24px 1fr 24px;
     align-items: center;
-    gap: var(--sx-20);
+    gap: 20px;
     width: 100%;
-    min-height: var(--sx-48);
-    padding: var(--sx-12) var(--sx-16);
+    min-height: 48px;
+    padding: 12px 16px;
     background: #FEFEFE;
     border: 1px solid #EFEFEF;
     box-shadow: 0 2px 4px 2px rgba(10, 13, 18, 0.1);
@@ -5105,8 +5105,8 @@ html.ek-quiz-open {
     color: #2E3033;
     font-family: 'Sofia Pro', sans-serif;
     font-weight: 400;
-    font-size: var(--sx-14);
-    line-height: var(--sx-24);
+    font-size: 14px;
+    line-height: 24px;
     text-align: center;
   }
   .sx-mfeatures__card::after {
@@ -5846,59 +5846,14 @@ html.ek-quiz-open {
 
 /* ---------- Responsive (Mobile < 1024px) ---------- */
 @media (max-width: 1024px) {
-  /* ============================================================
-     FLUID SCALE SYSTEM — design base = 430px (iPhone 14 Pro Max)
-     At 430vw → exact px match. Below → scales down.
-     ============================================================ */
-  .sx {
-    --sx-4:  clamp(3px,  0.93vw, 4px);
-    --sx-8:  clamp(6px,  1.86vw, 8px);
-    --sx-10: clamp(7px,  2.33vw, 10px);
-    --sx-12: clamp(9px,  2.79vw, 12px);
-    --sx-14: clamp(11px, 3.26vw, 14px);
-    --sx-16: clamp(12px, 3.72vw, 16px);
-    --sx-18: clamp(14px, 4.19vw, 18px);
-    --sx-20: clamp(15px, 4.65vw, 20px);
-    --sx-22: clamp(17px, 5.12vw, 22px);
-    --sx-24: clamp(18px, 5.58vw, 24px);
-    --sx-26: clamp(20px, 6.05vw, 26px);
-    --sx-28: clamp(22px, 6.51vw, 28px);
-    --sx-30: clamp(23px, 6.98vw, 30px);
-    --sx-32: clamp(24px, 7.44vw, 32px);
-    --sx-36: clamp(28px, 8.37vw, 36px);
-    --sx-40: clamp(30px, 9.30vw, 40px);
-    --sx-42: clamp(32px, 9.77vw, 42px);
-    --sx-48: clamp(36px, 11.16vw, 48px);
-    --sx-52: clamp(40px, 12.09vw, 52px);
-    --sx-56: clamp(42px, 13.02vw, 56px);
-    --sx-60: clamp(46px, 13.95vw, 60px);
-    --sx-64: clamp(48px, 14.88vw, 64px);
-    --sx-84: clamp(64px, 19.53vw, 84px);
-    --sx-100: clamp(72px, 23.26vw, 100px);
-    --sx-120: clamp(88px, 27.91vw, 120px);
-    --sx-140: clamp(105px, 32.56vw, 140px);
-    --sx-148: clamp(110px, 34.42vw, 148px);
-    --sx-160: clamp(120px, 37.21vw, 160px);
-    --sx-180: clamp(135px, 41.86vw, 180px);
-    --sx-200: clamp(150px, 46.51vw, 200px);
-    --sx-240: clamp(180px, 55.81vw, 240px);
-    --sx-260: clamp(195px, 60.47vw, 260px);
-    --sx-268: clamp(200px, 62.33vw, 268px);
-    --sx-300: clamp(225px, 69.77vw, 300px);
-    --sx-320: clamp(240px, 74.42vw, 320px);
-    --sx-348: clamp(260px, 80.93vw, 348px);
-    --sx-360: clamp(270px, 83.72vw, 360px);
-    --sx-382: clamp(286px, 88.84vw, 382px);
-  }
-
   .sx-header {
-    padding: var(--sx-16) var(--sx-20);
+    padding: 16px 20px;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
     background: rgba(0, 51, 102, 0.85);
   }
-  .sx-header__inner { gap: var(--sx-12); }
-  .sx-header__logo-img { width: var(--sx-140); height: auto; }
+  .sx-header__inner { gap: 12px; }
+  .sx-header__logo-img { width: 140px; height: auto; }
   .sx-header__cta { display: none !important; }
 
   /* ---------- HERO (mobil) ---------- */
@@ -5939,12 +5894,12 @@ html.ek-quiz-open {
     position: relative;
     z-index: 2;
     width: 100%;
-    padding: var(--sx-100) var(--sx-24) 0;
+    padding: 100px 24px 0;
     top: auto; left: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--sx-20);
+    gap: 20px;
   }
   /* Inner children bubble up to content's flex so we can reorder them */
   .sx-hero__inner { display: contents; }
@@ -5954,8 +5909,8 @@ html.ek-quiz-open {
 
   .sx-hero__title {
     order: 1;
-    font-size: var(--sx-32);
-    line-height: var(--sx-40);
+    font-size: 32px;
+    line-height: 40px;
     text-align: center;
     position: relative;
   }
@@ -5966,12 +5921,12 @@ html.ek-quiz-open {
   .sx-hero__title::after {
     content: "Scarlet X altın iğne ile daha pürüzsüz ve genç bir cilt.";
     display: block;
-    margin-top: var(--sx-12);
+    margin-top: 12px;
     color: #FEFEFE;
     font-family: 'Sofia Pro', sans-serif;
     font-weight: 400;
-    font-size: var(--sx-16);
-    line-height: var(--sx-24);
+    font-size: 16px;
+    line-height: 24px;
     opacity: 0.9;
     text-align: center;
   }
@@ -5979,23 +5934,23 @@ html.ek-quiz-open {
   .sx-cta--hero {
     order: 2;
     width: 100%;
-    max-width: var(--sx-360);
+    max-width: 360px;
     margin-top: 0;
   }
 
   .sx-hero__logos {
     order: 3;
     width: 100%;
-    max-width: var(--sx-360);
+    max-width: 360px;
     display: flex !important;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: var(--sx-12);
-    margin-bottom: var(--sx-40);
+    gap: 12px;
+    margin-bottom: 40px;
   }
   .sx-hero__logos img {
-    height: var(--sx-28) !important;
+    height: 28px !important;
     width: auto !important;
     object-fit: contain;
   }
@@ -6055,8 +6010,8 @@ html.ek-quiz-open {
   }
   .sx-doctor {
     flex-direction: column;
-    padding: var(--sx-48) var(--sx-20);
-    gap: var(--sx-24);
+    padding: 48px 20px;
+    gap: 24px;
     align-items: center;
   }
   /* Flatten content so title can move above the card via flex order */
@@ -6066,15 +6021,15 @@ html.ek-quiz-open {
   .sx-doctor__title {
     order: 0;
     width: 100%;
-    max-width: var(--sx-382);
-    min-height: var(--sx-84);
-    font-size: var(--sx-28);
-    line-height: var(--sx-36);
+    max-width: 382px;
+    min-height: 84px;
+    font-size: 28px;
+    line-height: 36px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: var(--sx-12);
+    gap: 12px;
     text-align: center;
   }
   .sx-doctor__card {
@@ -6093,25 +6048,25 @@ html.ek-quiz-open {
   }
   .sx-doctor__content > .sx-cta,
   .sx-doctor .sx-cta--hero { order: 4; }
-  .sx-problems { flex-direction: column; padding: var(--sx-48) var(--sx-20); gap: var(--sx-16); }
-  .sx-problems__title { font-size: var(--sx-28); line-height: var(--sx-40); }
+  .sx-problems { flex-direction: column; padding: 48px 20px; gap: 16px; }
+  .sx-problems__title { font-size: 28px; line-height: 38px; }
   .sx-problems__question { font-size: 16px !important; line-height: 24px !important; }
   .sx-problems__text { font-size: 20px !important; line-height: 28px !important; }
   .sx-problems__text--bold { font-size: 20px !important; line-height: 28px !important; }
 
   .sx-problems__grid {
     width: 100%;
-    max-width: var(--sx-382);
+    max-width: 382px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--sx-12);
+    gap: 12px;
     margin: 0 auto;
   }
   .sx-problem-card {
     box-sizing: border-box;
     width: 100%;
-    height: var(--sx-148);
-    padding: var(--sx-16) var(--sx-12);
+    height: 146px;
+    padding: 16px 12px;
     background: #FEFEFE;
     border: 0.73452px solid #EFEFEF;
     box-shadow: 0 1.46904px 2.93808px 2px rgba(10, 13, 18, 0.1);
@@ -6140,8 +6095,8 @@ html.ek-quiz-open {
   .sx-product {
     flex-direction: column;
     align-items: center;
-    padding: var(--sx-48) var(--sx-20);
-    gap: var(--sx-24);
+    padding: 48px 20px;
+    gap: 24px;
   }
   /* Flatten content so we can reorder with title/subtitle/list first, video middle, CTA last */
   .sx-product__content { display: contents; }
@@ -6201,13 +6156,13 @@ html.ek-quiz-open {
   .sx-cta--hero { max-width: 360px; }
   .sx-mfeatures, .sx-mfeatures__card { width: 100%; max-width: 100%; }
   .sx-benefits {
-    padding: var(--sx-32) var(--sx-20);
-    gap: var(--sx-20);
+    padding: 32px 20px;
+    gap: 20px;
     align-items: center;
   }
   .sx-benefits__header {
     width: 100%;
-    max-width: var(--sx-382);
+    max-width: 382px;
     padding: 0;
   }
   .sx-benefits__title {
@@ -6237,19 +6192,19 @@ html.ek-quiz-open {
 
   .sx-benefits__grid {
     width: 100%;
-    max-width: var(--sx-382);
+    max-width: 382px;
     padding: 0;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--sx-12);
+    gap: 12px;
   }
   /* 5th card spans full width */
   .sx-benefits__grid .sx-benefit-card:nth-child(5) {
     grid-column: 1 / -1;
   }
   .sx-benefit-card {
-    min-height: var(--sx-148);
-    padding: var(--sx-20) var(--sx-16);
-    gap: var(--sx-12);
+    min-height: 148px;
+    padding: 20px 16px;
+    gap: 12px;
     background: #FEFEFE;
     border: 1px solid #EFEFEF;
     border-radius: 12px;
@@ -6278,25 +6233,24 @@ html.ek-quiz-open {
   .sx-reviews { padding: 48px 20px; }
   /* Horizontal swipe slider on mobile */
   .sx-reviews {
-    padding: var(--sx-48) 0 0 var(--sx-18, 18px);
+    padding: 48px 0 0 18px;
     align-items: stretch;
   }
-  .sx-reviews__header { padding: 0 var(--sx-20); }
+  .sx-reviews__header { padding: 0 20px; }
   .sx-reviews__title {
     font-family: 'Sofia Pro', sans-serif !important;
     font-weight: 600 !important;
-    font-size: var(--sx-28) !important;
-    line-height: var(--sx-42) !important;
+    font-size: 28px !important;
+    line-height: 42px !important;
     text-align: center !important;
     color: #003366 !important;
   }
   .sx-reviews__rating {
-    width: 100% !important;
-    max-width: var(--sx-348) !important;
-    height: auto !important;
-    min-height: clamp(36px, 11.4vw, 49px);
-    gap: var(--sx-16) !important;
-    padding: var(--sx-4) var(--sx-12) !important;
+    width: 348px !important;
+    max-width: 100%;
+    height: 49px !important;
+    gap: 16px !important;
+    padding: 4px 12px !important;
     background: #F1F8FE !important;
     border: 1px solid #E5E5E5 !important;
     border-radius: 12px !important;
@@ -6304,7 +6258,7 @@ html.ek-quiz-open {
   .sx-reviews__rating-label {
     font-family: 'Sofia Pro', sans-serif !important;
     font-weight: 600 !important;
-    font-size: var(--sx-16) !important;
+    font-size: 16px !important;
     line-height: 100% !important;
     color: #6E6E6E !important;
   }
@@ -6333,17 +6287,17 @@ html.ek-quiz-open {
     align-items: stretch !important;
     gap: 0 !important;
     height: auto !important;
-    min-height: var(--sx-268);
-    max-height: var(--sx-268);
-    width: calc(100vw - var(--sx-40));
+    min-height: 268px;
+    max-height: 268px;
+    width: calc(100vw - 40px);
     max-width: 450px;
     flex: 0 0 auto !important;
     scroll-snap-align: start;
     overflow: hidden;
   }
   .sx-review-card__image-wrap {
-    width: var(--sx-180) !important;
-    min-width: var(--sx-180);
+    width: 180px !important;
+    min-width: 180px;
     height: auto !important;
     flex-shrink: 0;
     align-self: stretch;
@@ -6366,14 +6320,14 @@ html.ek-quiz-open {
   .sx-review-card__body {
     width: auto !important;
     flex: 1 1 auto !important;
-    padding: 2px var(--sx-10) 0px !important;
+    padding: 2px 10px 0px !important;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
   }
   .sx-review-card__name {
-    font-size: var(--sx-16) !important;
-    line-height: var(--sx-32) !important;
+    font-size: 16px !important;
+    line-height: 32px !important;
     font-weight: 700;
   }
   .sx-review-card__title {
@@ -6409,11 +6363,11 @@ html.ek-quiz-open {
   .sx-faq__list { width: 100%; padding: 0; }
   /* ---------- FOOTER (mobil) ---------- */
   .sx-footer {
-    padding: var(--sx-48) var(--sx-20) 0;
+    padding: 48px 20px 0;
     margin-left: 0 !important;
     display: flex;
     flex-direction: column;
-    gap: var(--sx-24);
+    gap: 24px;
     align-items: stretch;
   }
   /* Flatten so we can reorder: logo, mission, contact title, desc, items, social, map */
