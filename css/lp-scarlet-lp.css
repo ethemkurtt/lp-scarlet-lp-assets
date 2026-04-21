@@ -5358,21 +5358,29 @@ html.ek-quiz-open {
   gap: 64px;
   overflow: hidden;
 }
-.sx .sx-product .sx-product__video {
+.sx-product__video {
   width: 421px;
   height: 576px;
   align-self: stretch;
-  position: relative !important;
+  position: relative;
   border-radius: 12px;
-  background: #000 url('https://lp.elitklinik.com.tr/wp-content/uploads/2026/04/Blank-container-1.png') center / cover no-repeat !important;
+  background-color: #000;
   cursor: pointer;
   flex-shrink: 0;
   overflow: hidden;
 }
-.sx .sx-product .sx-product__video > * {
-  position: relative;
-  z-index: 2;
+.sx-product__video::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('https://lp.elitklinik.com.tr/wp-content/uploads/2026/04/Blank-container-1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  pointer-events: none;
 }
+.sx-product__video > * { position: relative; z-index: 1; }
 .sx-product__play {
   position: absolute;
   left: 50%;
@@ -6136,13 +6144,15 @@ html.ek-quiz-open {
     line-height: 28px !important;
     font-weight: 700 !important;
   }
-  .sx .sx-product .sx-product__video {
+  .sx-product__video {
     order: 3;
     width: 100%;
     max-width: 382px;
     height: auto;
     aspect-ratio: 382 / 432;
-    background: #000 url('https://lp.elitklinik.com.tr/wp-content/uploads/2026/04/scarletx-kapak-video-mobil.webp') center / cover no-repeat !important;
+  }
+  .sx-product__video::before {
+    background-image: url('https://lp.elitklinik.com.tr/wp-content/uploads/2026/04/scarletx-kapak-video-mobil.webp') !important;
   }
   .sx-product .sx-cta--hero { order: 4; width: 100%; max-width: 382px; }
 
