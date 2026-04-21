@@ -5698,6 +5698,7 @@ html.ek-quiz-open {
 /* ---------- Footer ---------- */
 .sx-footer {
   width: 100%;
+  margin: 0 !important;
   padding: 96px 100px 0;
   background: #003366;
   overflow: hidden;
@@ -5908,8 +5909,8 @@ html.ek-quiz-open {
     text-align: center;
     position: relative;
   }
-  .sx-hero__title--dark,
-  .sx-hero__title--light { color: #FEF3EA; }
+  .sx-hero__title--dark { color: #003366; }
+  .sx-hero__title--light { color: #FEFEFE; }
 
   /* Subtitle injected via CSS (no HTML change needed) */
   .sx-hero__title::after {
@@ -6400,6 +6401,7 @@ html.ek-quiz-open {
     max-width: 100% !important;
     height: 360px !important;
     aspect-ratio: auto;
+    padding-bottom: 30px;
   }
 
   /* Hide copy + divider on mobile (not in design) */
