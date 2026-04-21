@@ -6337,8 +6337,54 @@ html.ek-quiz-open {
   .sx-faq { padding: 48px 20px; }
   .sx-faq__title { font-size: 28px; }
   .sx-faq__list { width: 100%; padding: 0; }
-  .sx-footer { padding: 48px 20px 0; margin-left: 0px !important; }
-  .sx-footer__row { flex-direction: column; gap: 32px; }
-  .sx-footer__image { width: 100%; max-width: 429px; height: auto; aspect-ratio: 1; }
-  .sx-footer__bottom { flex-direction: column; align-items: flex-start; padding: 16px 0; gap: 16px; }
+  /* ---------- FOOTER (mobil) ---------- */
+  .sx-footer {
+    padding: 48px 20px 0;
+    margin-left: 0 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: stretch;
+  }
+  /* Flatten so we can reorder: logo, mission, contact title, desc, items, social, map */
+  .sx-footer__row,
+  .sx-footer__left { display: contents; }
+
+  .sx-footer__brand { order: 0; display: flex; flex-direction: column; gap: 16px; }
+  .sx-footer__logo { order: 0; }
+  .sx-footer__mission { width: 100% !important; max-width: 100% !important; }
+  .sx-footer__left > div:not(.sx-footer__brand) { order: 1; display: flex; flex-direction: column; gap: 12px; }
+
+  /* Contact items stacked vertically on mobile */
+  .sx-footer__contact-row { flex-direction: column !important; gap: 8px !important; }
+  .sx-footer__contact-item { padding: 8px 0 !important; }
+  .sx-footer__contact-item--divider { border-right: none !important; }
+
+  /* Social moved between contact and map */
+  .sx-footer__social {
+    order: 2;
+    justify-content: flex-start;
+    gap: 16px;
+    padding: 8px 0;
+  }
+
+  /* Map image */
+  .sx-footer__image {
+    order: 3;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    aspect-ratio: auto;
+  }
+
+  /* Hide copy + divider on mobile (not in design) */
+  .sx-footer__divider { display: none !important; }
+  .sx-footer__bottom {
+    order: 4;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 0;
+    gap: 16px;
+  }
+  .sx-footer__copy { display: none; }
 }
