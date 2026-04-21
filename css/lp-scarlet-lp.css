@@ -6337,7 +6337,7 @@ html.ek-quiz-open {
   .sx-faq { padding: 48px 20px; }
   .sx-faq__title { font-size: 28px; }
   .sx-faq__list { width: 100%; padding: 0; }
-  .sx-footer { padding: 48px 20px 0; }
+  .sx-footer { padding: 48px 20px 0; margin-left: 0px !important; }
   .sx-footer__row { flex-direction: column; gap: 32px; }
   .sx-footer__image { width: 100%; max-width: 429px; height: auto; aspect-ratio: 1; }
   .sx-footer__bottom { flex-direction: column; align-items: flex-start; padding: 16px 0; gap: 16px; }
