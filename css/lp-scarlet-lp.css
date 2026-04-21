@@ -6239,16 +6239,16 @@ html.ek-quiz-open {
     align-items: stretch !important;
     gap: 0 !important;
     height: auto !important;
-    min-height: 240px;
-    width: calc(100vw - 60px);
-    max-width: 430px;
+    min-height: 320px;
+    width: calc(100vw - 40px);
+    max-width: 450px;
     flex: 0 0 auto !important;
     scroll-snap-align: start;
     overflow: hidden;
   }
   .sx-review-card__image-wrap {
-    width: 140px !important;
-    min-width: 140px;
+    width: 180px !important;
+    min-width: 180px;
     flex-shrink: 0;
     align-self: stretch;
     position: relative;
@@ -6276,19 +6276,20 @@ html.ek-quiz-open {
     justify-content: flex-start;
   }
   .sx-review-card__name {
-    font-size: 20px !important;
-    line-height: 24px !important;
+    font-size: 22px !important;
+    line-height: 32px !important;
+    font-weight: 700;
   }
   .sx-review-card__title {
-    font-size: 14px !important;
-    line-height: 20px !important;
+    font-size: 15px !important;
+    line-height: 22px !important;
     font-weight: 600 !important;
     margin-top: 4px;
   }
   .sx-review-card__text {
-    font-size: 13px !important;
-    line-height: 20px !important;
-    margin-top: 8px;
+    font-size: 14px !important;
+    line-height: 22px !important;
+    margin-top: 10px;
   }
 
   /* Pagination dots injected by JS */
