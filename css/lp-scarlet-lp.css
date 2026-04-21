@@ -5590,7 +5590,7 @@ html.ek-quiz-open {
 .sx-review-card__stars {
   position: absolute;
   left: 40px;
-  top: 168px;
+  top: 180px;
   padding: 12px;
   background: rgba(255, 255, 255, 0.68);
   border-radius: 641.89px;
@@ -5694,6 +5694,9 @@ html.ek-quiz-open {
   from { opacity: 0; transform: translateY(-5px); }
   to   { opacity: 1; transform: translateY(0); }
 }
+
+/* Desktop: force Elementor img height to 100% */
+.elementor img { height: 100% !important; }
 
 /* ---------- Footer ---------- */
 .sx-footer {
