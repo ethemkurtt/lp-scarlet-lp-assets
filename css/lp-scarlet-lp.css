@@ -6100,12 +6100,20 @@ html.ek-quiz-open {
     order: 1;
     width: 382px;
     max-width: 100%;
+    font-family: 'Sofia Pro', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 28px !important;
     text-align: right !important;
   }
   .sx-product__list {
     order: 2;
     width: 382px;
     max-width: 100%;
+    font-family: 'Sofia Pro', sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    line-height: 28px !important;
     text-align: right !important;
   }
   .sx-product__video {
