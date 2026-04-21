@@ -6236,9 +6236,12 @@ html.ek-quiz-open {
     align-items: stretch;
   }
   .sx-reviews__header {
-    padding: 0 20px;
+    padding: 0 24px;
     text-align: center;
     align-items: center;
+  }
+  .sx-reviews__rating {
+    margin: 0 auto;
   }
   .sx-reviews__title {
     font-family: 'Sofia Pro', sans-serif !important;
@@ -6269,6 +6272,9 @@ html.ek-quiz-open {
   .sx-reviews__rows {
     width: 100%;
     max-height: 268px;
+    box-sizing: border-box;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
     display: flex !important;
     flex-direction: row !important;
     align-items: stretch !important;
@@ -6293,7 +6299,7 @@ html.ek-quiz-open {
     height: auto !important;
     min-height: 268px;
     max-height: 268px;
-    width: calc(100vw - 40px);
+    width: calc(100vw - 48px);
     max-width: 450px;
     flex: 0 0 auto !important;
     scroll-snap-align: start;
