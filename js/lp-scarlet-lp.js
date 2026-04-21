@@ -13,6 +13,23 @@
 document.addEventListener('DOMContentLoaded', function () {
 
   /* =============================================================
+     SCARLET — on mobile, move social icons between contact and map
+     ============================================================= */
+  (function sxFooterMobileReorder() {
+    if (!window.matchMedia('(max-width: 1024px)').matches) return;
+    var footer = document.querySelector('.sx-footer');
+    if (!footer) return;
+    var social = footer.querySelector('.sx-footer__social');
+    var mapImg = footer.querySelector('.sx-footer__image');
+    if (social && mapImg && social.parentNode !== mapImg.parentNode) {
+      mapImg.parentNode.insertBefore(social, mapImg);
+    } else if (social && mapImg) {
+      // Move social just before map
+      mapImg.parentNode.insertBefore(social, mapImg);
+    }
+  })();
+
+  /* =============================================================
      SCARLET — mobile reviews slider with pagination dots
      ============================================================= */
   (function sxReviewsSlider() {
