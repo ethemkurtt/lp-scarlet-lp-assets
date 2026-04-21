@@ -6141,9 +6141,30 @@ html.ek-quiz-open {
     max-width: 382px;
     padding: 0;
   }
-  .sx-benefits__title { font-size: 22px !important; line-height: 28px !important; }
-  .sx-benefits__desc { font-size: 18px !important; line-height: 24px !important; }
-  .sx-benefits__desc-sub { font-size: 16px !important; line-height: 22px !important; }
+  .sx-benefits__title {
+    font-family: 'Sofia Pro', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 28px !important;
+    line-height: 42px !important;
+    text-align: center !important;
+    color: #003366 !important;
+  }
+  .sx-benefits__desc {
+    font-family: 'Sofia Pro', sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    line-height: 28px !important;
+    text-align: center !important;
+    color: #2E3033 !important;
+  }
+  .sx-benefits__desc-sub {
+    font-family: 'Sofia Pro', sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    line-height: 28px !important;
+    text-align: center !important;
+    color: #6E6E6E !important;
+  }
 
   .sx-benefits__grid {
     width: 100%;
@@ -6157,10 +6178,13 @@ html.ek-quiz-open {
     grid-column: 1 / -1;
   }
   .sx-benefit-card {
-    min-height: 0;
-    padding: 16px 12px;
+    min-height: 148px;
+    padding: 20px 16px;
     gap: 12px;
-    border-radius: 8.81px;
+    background: #FEFEFE;
+    border: 1px solid #EFEFEF;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px 2px rgba(10, 13, 18, 0.10);
   }
   .sx-benefit-card__icon {
     width: 36px;
