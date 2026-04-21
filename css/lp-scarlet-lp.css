@@ -6268,6 +6268,7 @@ html.ek-quiz-open {
 
   .sx-reviews__rows {
     width: 100%;
+    max-height: 268px;
     display: flex !important;
     flex-direction: row !important;
     align-items: stretch !important;
