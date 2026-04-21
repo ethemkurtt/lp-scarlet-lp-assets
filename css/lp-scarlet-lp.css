@@ -6152,6 +6152,10 @@ html.ek-quiz-open {
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
   }
+  /* 5th card spans full width */
+  .sx-benefits__grid .sx-benefit-card:nth-child(5) {
+    grid-column: 1 / -1;
+  }
   .sx-benefit-card {
     min-height: 0;
     padding: 16px 12px;
