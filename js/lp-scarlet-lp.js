@@ -13,6 +13,30 @@
 document.addEventListener('DOMContentLoaded', function () {
 
   /* =============================================================
+     SCARLET — product video: click-to-play YouTube iframe
+     ============================================================= */
+  (function sxProductVideo() {
+    var wrap = document.querySelector('.sx-product__video');
+    if (!wrap) return;
+    wrap.addEventListener('click', function () {
+      if (wrap.classList.contains('playing')) return;
+      var iframe = wrap.querySelector('.sx-product__video-iframe');
+      if (iframe) {
+        var src = iframe.getAttribute('data-src') || iframe.getAttribute('src');
+        if (src) {
+          if (src.indexOf('autoplay=1') === -1) {
+            src += (src.indexOf('?') === -1 ? '?' : '&') + 'autoplay=1';
+          }
+          iframe.src = src;
+          iframe.style.display = 'block';
+        }
+      }
+      wrap.classList.add('playing');
+      wrap.style.cursor = 'default';
+    });
+  })();
+
+  /* =============================================================
      SCARLET — on mobile, move social icons between contact and map
      ============================================================= */
   (function sxFooterMobileReorder() {
