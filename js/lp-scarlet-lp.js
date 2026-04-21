@@ -13,6 +13,58 @@
 document.addEventListener('DOMContentLoaded', function () {
 
   /* =============================================================
+     SCARLET — mobile reviews slider with pagination dots
+     ============================================================= */
+  (function sxReviewsSlider() {
+    if (!window.matchMedia('(max-width: 1024px)').matches) return;
+    var track = document.querySelector('.sx-reviews__rows');
+    if (!track) return;
+    var cards = track.querySelectorAll('.sx-review-card');
+    if (!cards.length) return;
+
+    // Flatten: move all cards out of their .sx-reviews__row wrappers
+    var rows = track.querySelectorAll('.sx-reviews__row');
+    rows.forEach(function (row) {
+      while (row.firstChild) track.appendChild(row.firstChild);
+      row.remove();
+    });
+    cards = track.querySelectorAll('.sx-review-card');
+
+    // Create dots
+    var dots = document.createElement('div');
+    dots.className = 'sx-reviews__dots';
+    var reviewsSection = track.closest('.sx-reviews');
+    cards.forEach(function (_, i) {
+      var dot = document.createElement('span');
+      dot.className = 'sx-reviews__dot' + (i === 0 ? ' active' : '');
+      dot.addEventListener('click', function () {
+        var card = cards[i];
+        if (card) track.scrollTo({ left: card.offsetLeft - track.offsetLeft, behavior: 'smooth' });
+      });
+      dots.appendChild(dot);
+    });
+    reviewsSection.appendChild(dots);
+
+    var dotEls = dots.querySelectorAll('.sx-reviews__dot');
+    var scrollTimer;
+    track.addEventListener('scroll', function () {
+      clearTimeout(scrollTimer);
+      scrollTimer = setTimeout(function () {
+        var scrollLeft = track.scrollLeft;
+        var closestIdx = 0;
+        var minDist = Infinity;
+        cards.forEach(function (card, i) {
+          var dist = Math.abs(card.offsetLeft - track.offsetLeft - scrollLeft);
+          if (dist < minDist) { minDist = dist; closestIdx = i; }
+        });
+        dotEls.forEach(function (d, i) {
+          d.classList.toggle('active', i === closestIdx);
+        });
+      }, 80);
+    });
+  })();
+
+  /* =============================================================
      SCARLET — swap hero bg image on mobile
      ============================================================= */
   (function swapScarletHeroBg() {

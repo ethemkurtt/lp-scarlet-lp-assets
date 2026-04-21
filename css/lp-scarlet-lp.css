@@ -6207,8 +6207,93 @@ html.ek-quiz-open {
   }
   .sx-benefits > .sx-cta--hero { width: 100%; max-width: 382px; }
   .sx-reviews { padding: 48px 20px; }
-  .sx-reviews__row { flex-direction: column; gap: 24px; }
-  .sx-review-card { flex-direction: column; height: auto; }
+  /* Horizontal swipe slider on mobile */
+  .sx-reviews {
+    padding: 48px 0;
+  }
+  .sx-reviews__rows {
+    width: 100%;
+    flex-direction: row;
+    gap: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 20px 12px;
+    scrollbar-width: none;
+  }
+  .sx-reviews__rows::-webkit-scrollbar { display: none; }
+  .sx-reviews__row {
+    flex-direction: row;
+    gap: 16px;
+    flex: 0 0 auto;
+  }
+  .sx-review-card {
+    flex-direction: row;
+    height: auto;
+    min-height: 260px;
+    width: calc(100vw - 40px);
+    max-width: 430px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    align-items: stretch;
+  }
+  .sx-review-card__image-wrap {
+    width: 160px;
+    flex-shrink: 0;
+    height: auto;
+  }
+  .sx-review-card__image {
+    width: 160px;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    position: absolute;
+    left: 0; top: 0;
+  }
+  .sx-review-card__stars {
+    left: 24px;
+    top: auto;
+    bottom: 16px;
+  }
+  .sx-review-card__body {
+    width: auto;
+    flex: 1;
+    padding: 20px 16px;
+  }
+  .sx-review-card__name {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .sx-review-card__title {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 4px;
+  }
+  .sx-review-card__text {
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 8px;
+  }
+
+  /* Pagination dots injected by JS */
+  .sx-reviews__dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+  }
+  .sx-reviews__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #D0D5DD;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .sx-reviews__dot.active { background: #003366; }
   .sx-review-card__image-wrap { width: 100%; height: 200px; }
   .sx-review-card__body { width: 100%; padding: 16px; }
   .sx-faq { padding: 48px 20px; }
