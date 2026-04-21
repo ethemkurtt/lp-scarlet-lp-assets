@@ -5364,9 +5364,11 @@ html.ek-quiz-open {
   align-self: stretch;
   position: relative;
   border-radius: 12px;
-  background-image: url('https://lp.elitklinik.com.tr/wp-content/uploads/2026/04/Blank-container-1.png');
-  background-size: cover;
-  background-position: center;
+  background-image: url('https://lp.elitklinik.com.tr/wp-content/uploads/2026/04/Blank-container-1.png') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-color: #000;
   cursor: pointer;
   flex-shrink: 0;
 }
@@ -6018,8 +6020,8 @@ html.ek-quiz-open {
   }
   .sx-doctor__title {
     order: 0;
-    width: 382px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 382px;
     min-height: 84px;
     font-size: 28px;
     line-height: 36px;
@@ -6032,8 +6034,8 @@ html.ek-quiz-open {
   }
   .sx-doctor__card {
     order: 1;
-    width: 350px !important;
-    max-width: 100%;
+    width: 100% !important;
+    max-width: 350px;
   }
   .sx-doctor__subtitle {
     order: 2;
@@ -6101,16 +6103,16 @@ html.ek-quiz-open {
 
   .sx-product__title {
     order: 0;
-    width: 382px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 382px;
     font-size: 24px !important;
     line-height: 32px !important;
     text-align: right !important;
   }
   .sx-product__subtitle {
     order: 1;
-    width: 382px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 382px;
     font-family: 'Sofia Pro', sans-serif !important;
     font-weight: 400 !important;
     font-size: 16px !important;
@@ -6119,8 +6121,8 @@ html.ek-quiz-open {
   }
   .sx-product__list {
     order: 2;
-    width: 382px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 382px;
     font-family: 'Sofia Pro', sans-serif !important;
     font-weight: 400 !important;
     font-size: 20px !important;
@@ -6142,6 +6144,17 @@ html.ek-quiz-open {
     background-repeat: no-repeat !important;
   }
   .sx-product .sx-cta--hero { order: 4; width: 100%; max-width: 382px; }
+
+  /* Reviews rating: full-width fluid */
+  .sx-reviews__rating {
+    width: 100% !important;
+    max-width: 348px !important;
+  }
+  /* Hero subtitle, cta, logos: use fluid widths */
+  .sx-hero__subtitle { max-width: 100% !important; width: 100% !important; }
+  .sx-hero__logos { width: 100% !important; max-width: 360px; }
+  .sx-cta--hero { max-width: 360px; }
+  .sx-mfeatures, .sx-mfeatures__card { width: 100%; max-width: 100%; }
   .sx-benefits {
     padding: 32px 20px;
     gap: 20px;
