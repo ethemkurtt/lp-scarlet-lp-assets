@@ -6131,9 +6131,44 @@ html.ek-quiz-open {
     background-repeat: no-repeat !important;
   }
   .sx-product .sx-cta--hero { order: 4; width: 100%; max-width: 382px; }
-  .sx-benefits { padding: 48px 20px; gap: 32px; }
-  .sx-benefits__grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-  .sx-benefits__title { font-size: 28px; }
+  .sx-benefits {
+    padding: 32px 20px;
+    gap: 20px;
+    align-items: center;
+  }
+  .sx-benefits__header {
+    width: 100%;
+    max-width: 382px;
+    padding: 0;
+  }
+  .sx-benefits__title { font-size: 22px !important; line-height: 28px !important; }
+  .sx-benefits__desc { font-size: 18px !important; line-height: 24px !important; }
+  .sx-benefits__desc-sub { font-size: 16px !important; line-height: 22px !important; }
+
+  .sx-benefits__grid {
+    width: 100%;
+    max-width: 382px;
+    padding: 0;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .sx-benefit-card {
+    min-height: 0;
+    padding: 16px 12px;
+    gap: 12px;
+    border-radius: 8.81px;
+  }
+  .sx-benefit-card__icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+  }
+  .sx-benefit-card__icon img { width: 18px !important; height: 18px !important; }
+  .sx-benefit-card__label {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+  .sx-benefits > .sx-cta--hero { width: 100%; max-width: 382px; }
   .sx-reviews { padding: 48px 20px; }
   .sx-reviews__row { flex-direction: column; gap: 24px; }
   .sx-review-card { flex-direction: column; height: auto; }
