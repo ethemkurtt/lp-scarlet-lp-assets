@@ -5849,7 +5849,7 @@ html.ek-quiz-open {
   }
   .sx-header__inner { gap: 12px; }
   .sx-header__logo-img { width: 140px; height: auto; }
-  .sx-header__cta { padding: 10px 16px; font-size: 14px; height: auto; }
+  .sx-header__cta { display: none !important; }
 
   /* ---------- HERO (mobil) ---------- */
   .sx .sx-hero {
