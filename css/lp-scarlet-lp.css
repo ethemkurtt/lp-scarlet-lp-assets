@@ -5364,23 +5364,21 @@ html.ek-quiz-open {
   align-self: stretch;
   position: relative;
   border-radius: 12px;
-  background-color: #000;
+  background: #000 url('https://lp.elitklinik.com.tr/wp-content/uploads/2026/04/Blank-container-1.png') center/cover no-repeat;
   cursor: pointer;
   flex-shrink: 0;
   overflow: hidden;
 }
 .sx-product__video::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: url('https://lp.elitklinik.com.tr/wp-content/uploads/2026/04/Blank-container-1.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 0;
-  pointer-events: none;
+  content: '' !important;
+  display: block !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: url('https://lp.elitklinik.com.tr/wp-content/uploads/2026/04/Blank-container-1.png') center/cover no-repeat !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
 }
-.sx-product__video > * { position: relative; z-index: 1; }
+.sx-product__video > * { position: relative; z-index: 2; }
 .sx-product__play {
   position: absolute;
   left: 50%;
