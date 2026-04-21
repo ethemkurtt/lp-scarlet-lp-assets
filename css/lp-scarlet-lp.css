@@ -6210,11 +6210,16 @@ html.ek-quiz-open {
   /* Horizontal swipe slider on mobile */
   .sx-reviews {
     padding: 48px 0;
+    align-items: stretch;
   }
+  .sx-reviews__header { padding: 0 20px; }
+
   .sx-reviews__rows {
     width: 100%;
-    flex-direction: row;
-    gap: 0;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: stretch !important;
+    gap: 16px !important;
     overflow-x: auto;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
@@ -6224,56 +6229,65 @@ html.ek-quiz-open {
     scrollbar-width: none;
   }
   .sx-reviews__rows::-webkit-scrollbar { display: none; }
-  .sx-reviews__row {
-    flex-direction: row;
-    gap: 16px;
-    flex: 0 0 auto;
-  }
+
+  /* JS flattens these away, but keep rule just in case */
+  .sx-reviews__row { display: contents; }
+
   .sx-review-card {
-    flex-direction: row;
-    height: auto;
-    min-height: 260px;
-    width: calc(100vw - 40px);
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: stretch !important;
+    gap: 0 !important;
+    height: auto !important;
+    min-height: 240px;
+    width: calc(100vw - 60px);
     max-width: 430px;
-    flex: 0 0 auto;
+    flex: 0 0 auto !important;
     scroll-snap-align: start;
-    align-items: stretch;
+    overflow: hidden;
   }
   .sx-review-card__image-wrap {
-    width: 160px;
+    width: 140px !important;
+    min-width: 140px;
     flex-shrink: 0;
-    height: auto;
+    align-self: stretch;
+    position: relative;
   }
   .sx-review-card__image {
-    width: 160px;
-    height: 100%;
-    object-fit: cover;
-    object-position: top center;
-    position: absolute;
-    left: 0; top: 0;
+    position: absolute !important;
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: top center !important;
   }
   .sx-review-card__stars {
-    left: 24px;
-    top: auto;
-    bottom: 16px;
+    left: 20px !important;
+    top: auto !important;
+    bottom: 16px !important;
   }
   .sx-review-card__body {
-    width: auto;
-    flex: 1;
-    padding: 20px 16px;
+    width: auto !important;
+    flex: 1 1 auto !important;
+    padding: 16px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
   .sx-review-card__name {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 20px !important;
+    line-height: 24px !important;
   }
   .sx-review-card__title {
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    font-weight: 600 !important;
     margin-top: 4px;
   }
   .sx-review-card__text {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 13px !important;
+    line-height: 20px !important;
     margin-top: 8px;
   }
 
