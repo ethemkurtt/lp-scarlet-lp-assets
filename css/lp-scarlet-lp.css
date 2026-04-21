@@ -6362,13 +6362,13 @@ html.ek-quiz-open {
     gap: 0 !important;
     align-items: stretch !important;
     width: 100%;
-    max-width: 300px;
+    max-width: 260px;
     margin: 0 auto;
   }
   .sx-footer__contact-item {
     padding: 12px 0 !important;
     width: 100% !important;
-    justify-content: flex-start !important;
+    justify-content: center !important;
     gap: 12px !important;
   }
   .sx-footer__contact-item--divider {
