@@ -6138,8 +6138,11 @@ html.ek-quiz-open {
     line-height: 28px !important;
     text-align: right !important;
   }
-  .sx-product__list .sx-product__highlight {
-    font-weight: 500 !important;
+  .sx-product__list .sx-product__highlight,
+  .sx-product__highlight {
+    font-size: 20px !important;
+    line-height: 28px !important;
+    font-weight: 700 !important;
   }
   .sx-product__video {
     order: 3;
